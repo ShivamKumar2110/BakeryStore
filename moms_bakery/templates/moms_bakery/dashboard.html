@@ -96,7 +96,74 @@
                 </div>
                 <br>
                 <br><br>
-                <!-- Create table with dynamic data -->
+                <div>
+                    <table align="left" class="colorss">
+                        <tr>
+                            <td>
+                                <h3 style="padding: 0px 2px 13px 0px;color: white;">Name-</h3>
+                            </td>
+                            <td>
+                                <i>{% if name %}
+                                   {{ name }}
+                                   {% endif %}</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 style="padding: 0px 2px 13px 0px;color: white;">D.O.B-</h3>
+                            </td>
+                            <td>
+                                <i>{% if dob %}
+                                   {{ dob }}
+                                   {% endif %}</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 style="padding: 0px 2px 13px 0px;color: white;">Contact No.-</h3>
+                            </td>
+                            <td>
+                                <i>{% if number %}
+                                   {{ number }}
+                                   {% endif %}</i>
+                            </td>
+                        </tr>
+                    </table> 
+                    <table align="center" class="colorss">
+                        <tr>
+                            <td>
+                                <h3 style="padding: 0px 2px 13px 0px;color: white;">Email-</h3>
+                            </td>
+                            <td>
+                                <i>{% if email %}
+                                   {{ email }}
+                                   {% endif %}</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 style="padding: 0px 2px 13px 0px;color: white;">Address-</h3>
+                            </td>
+                            <td>
+                                <i>{% if add %}
+                                   {{ add }}
+                                   {% endif %}</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3 style="padding: 0px 2px 13px 0px;color: white;">License No.-</h3>
+                            </td>
+                            <td >
+                                    <h3 style="color: white;margin: -10px 0 0 2px;">
+                                        {% if status %}
+                                        {{ status }}
+                                        {% endif %}
+                                    </h3>
+                     </td>
+                        </tr>
+                    </table>
+                </div>
                 <br>
             </div>
         <div class="footer">
